@@ -1,0 +1,1548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bars{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav > ul > li > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav button{
+   height: 40px;
+   width: 120px;
+   background-color: rgb(80, 201, 154);
+   color: white;
+   border: none;
+   border-radius: 10px;
+}
+
+.hero{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-image: url(Images/hero.jpg);
+    /* overflow: auto; */
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.hero-content > h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 500px;
+    margin: 40px;
+}
+
+.hero-white{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding-left: 10px;
+    width: 600px;
+}
+
+.hero-coloured{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+
+.buttons-hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px;
+}
+
+.explore-button{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-button{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgba(71, 68, 68, 0.699);
+    color: white;
+    border: 2px solid rgb(204, 197, 197);
+    border-radius: 10px;
+}
+
+.qualities-hero{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-left: 40px;
+    border-top: 1px solid rgb(114, 110, 110);
+}
+
+.qualities-hero > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.qualities-hero h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.qualities-hero p{
+    color: rgb(155, 152, 152);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form{
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.form p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form div{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.form input,.form select{
+    height: 30px;
+    width: 250px;
+    border: 1px solid rgb(114, 110, 110);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.form button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.popular-destinations{
+    width: 100%;
+    background-color: rgb(243, 238, 238);
+    overflow: auto;
+}
+
+.popular-destinations > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;
+}
+
+.popular-destinations > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.popular-destinations > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.cards-destinations{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards-destinations > div{
+    background-image: url(Images/popula-destinations.jpg);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cards-destinations > div > div{
+    padding-top: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.cards-destinations > div > div > p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cards-destinations > div > div > h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more-destinations{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.featured-tours > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;
+}
+
+.featured-tours > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.featured-tours > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.tours-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tours-cards > div{
+    width: 300px;
+    overflow: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+.tours-cards img{
+    width: 100%;
+    height: 200px;
+}
+
+.gray{
+    color: rgb(114, 110, 110);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.tours-cards h5{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.tours-cards span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.price{
+    width: 95%;
+    border-top: 1px solid rgb(155, 152, 152);
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.price button{
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.price div{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.price > div > h2{
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.featured-tours > button{
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background: transparent;
+}
+
+.choose-us{
+    background-color: rgb(243, 238, 238);
+    overflow: auto;
+}
+
+.choose-us > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;  
+}
+
+.choose-us > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.choose-us > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.choose-us-cards > div{
+    width: 400px;
+    height: 200px;
+}
+
+.choose-us-cards > div i{
+    color: rgb(80, 201, 154);
+    background-color: rgb(163, 223, 200);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.choose-us-cards > div > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.choose-us-cards > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10pc;
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav button{
+   height: 40px;
+   width: 120px;
+   background-color: rgb(80, 201, 154);
+   color: white;
+   border: none;
+   border-radius: 10px;
+}
+
+.hero{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-image: url(Images/hero.jpg);
+    overflow: auto;
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.582);
+    overflow: auto;
+}
+
+.hero-content > h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 500px;
+}
+
+.hero-white{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin: 40px;
+    width: 600px;
+}
+
+.hero-coloured{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.buttons-hero{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+}
+
+.explore-button{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-button{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgba(71, 68, 68, 0.699);
+    color: white;
+    border: 2px solid rgb(204, 197, 197);
+    border-radius: 10px;
+}
+
+.qualities-hero{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-left: 40px;
+    border-top: 1px solid rgb(114, 110, 110);
+}
+
+.qualities-hero > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.qualities-hero h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.qualities-hero p{
+    color: rgb(155, 152, 152);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form{
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.form p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form div{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.form input,.form select{
+    height: 30px;
+    width: 250px;
+    border: 1px solid rgb(114, 110, 110);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.form button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.popular-destinations{
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    overflow: auto;
+}
+
+.popular-destinations > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;
+}
+
+.popular-destinations > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.popular-destinations > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.cards-destinations{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards-destinations > div{
+    background-image: url(Images/popular-destinations.jpg);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cards-destinations > div > div{
+    padding-top: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.cards-destinations > div > div > p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cards-destinations > div > div > h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more-destinations{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.featured-tours > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;
+}
+
+.featured-tours > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.featured-tours > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tours-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tours-cards > div{
+    width: 300px;
+    overflow: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+.tours-cards img{
+    width: 100%;
+    height: 200px;
+}
+
+.gray{
+    color: rgb(114, 110, 110);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.tours-cards h5{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.tours-cards span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.price{
+    width: 95%;
+    border-top: 1px solid rgb(155, 152, 152);
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.price button{
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.price div{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.price > div > h2{
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.featured-tours > button{
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background: transparent;
+    display: block;
+}
+
+.choose-us{
+    background-color: rgb(235, 235, 235);
+    overflow-y: hidden
+}
+
+.choose-us > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;  
+}
+
+.choose-us > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.choose-us > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.choose-us-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.choose-us-cards > div{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.choose-us-cards > div i{
+    color: rgb(80, 201, 154);
+    background-color: rgb(163, 223, 200);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.choose-us-cards > div > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.choose-us-cards > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.testimonials > h4{
+    padding: 10px;
+    background-color: rgba(80, 201, 155, 0.315);
+    border: 1px solid rgb(80, 201, 154);
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-top: 70px;  
+}
+
+.testimonials > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testimonials > p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.testimonials-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonials-cards > div{
+    width: 30%;
+    background-color: rgb(243, 238, 238);
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.stars{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.stars > i{
+    color: rgb(199, 199, 7);
+}
+
+.testimonials-cards > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.user-logo{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.user-logo h4{
+    color: rgb(80, 201, 154);
+    background-color: rgba(80, 201, 155, 0.315);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+.user-logo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+.user-logo p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(114, 110, 110);
+    font-size: 15px;
+}
+
+.user-logo h5{
+    color: rgb(80, 201, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.subscribe{
+    background-image: url(Images/subscribe-img.jpg);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.subscribe > div{
+    background-color: rgba(43, 105, 81, 0.774);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subscribe h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.subscribe p{
+    color: rgb(227, 238, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    width: 550px;
+}
+
+.subscribe input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.315);
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    padding-left: 10px;
+}
+
+.subscribe-input{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.subscribe input::placeholder{
+    color: white;
+}
+
+footer{
+    background-color: rgb(17, 24, 39);
+    overflow: auto;
+}
+
+footer > section > div{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer p{
+    color: rgb(204, 197, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+footer i{
+    background-color: rgb(114, 110, 110);
+    color: rgb(227, 238, 247);
+    height: 30px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+   padding-top: 3px;
+   margin-top: 20px;
+}
+
+footer h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+footer input{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(88, 111, 161, 0.356);
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+footer button{
+    color: white;
+    background-color: rgb(80, 201, 154);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footer-sec-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    width: 95%;
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.copyright p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Contact Page */
+
+.hero-contact{
+    min-height: 300px;
+    width: 100%;
+    background-color: rgb(80, 201, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contact h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.hero-contact p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.form-contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.form-contact h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contact p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(114, 110, 110);
+}
+
+.form-contact input[type="text"]{
+    width: 245px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+
+.form-contact input[type="email"], select{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.form-contact button{
+    background-color: rgb(80, 201, 154);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.form-details{
+    width: 47%;
+}
+
+.form-details > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.form-details > div > div > p{
+    padding-bottom: 10px;
+}
+
+.form-details > div > div{
+    margin-top: 30px;
+}
+
+.form-contact-details{
+    width: 47%;
+}
+
+.form-contact-details i{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(80, 201, 154);
+    background-color: rgb(184, 223, 208);
+    border-radius: 10px;
+}
+
+.form-contact-details h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.form-contact-details > div{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+iframe{
+    margin-top: 50px;
+}
+
+/* Responsiveness */
+
+@media (max-width :576px) {
+    #bars{
+        display: block;
+    }
+
+    nav  li{
+        display: none;
+    }
+
+    nav > div > button{
+        display: none;
+    }
+
+    .hero-content > h1{
+        width: 100%;
+        font-size: 32px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+    }
+
+    .hero-white{
+        width: 100%;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qualities-hero{
+        width: 90%;
+        gap: 10px;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+   .form input, .form select{
+        width: 100%;
+    }
+
+    .form div{
+        width: 90%;
+    }
+
+     .testimonials-cards > div{
+        width: 90%; 
+    }
+
+    .subscribe{
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .subscribe h1{
+        font-size: 32px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .subscribe p{
+        font-size: 17px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .subscribe button{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .subscribe-input{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-input input{
+        width: 95%;
+    }
+
+    .subscribe-input button{
+        margin-bottom: 10px;
+    }
+
+    footer button{
+        margin-top: 10px;
+    }
+
+    footer p{
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+    }
+
+    footer h2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .copyright p{
+        text-align: center;
+    }
+
+    .hero-contact{
+        width: 100%;
+    }
+
+    .hero-contact h1{
+        font-size: 40px;
+    }
+
+    .hero-contact p{
+        width: 100%;
+    }
+
+    .form-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .form-details{
+    width: 90%;
+   }
+
+.form-contact-details{
+    width: 90%;
+    margin-top: 20px;
+ }
+
+ .form-contact input[type="text"], .form-contact input[type="email"], .form-contact select, .form-contact textarea{
+    width: 100%;
+}
+
+.form-details > div > div{
+    width: 100%;
+}
+
+ }
+
+@media (min-width: 577px) and (max-width: 767px) {
+    #bars{
+        display: block;
+    }
+
+    nav  li{
+        display: none;
+    }
+
+    .hero-content > h1{
+        width: 100%;
+        font-size: 32px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+    }
+
+    .hero-white{
+        width: 100%;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qualities-hero{
+        width: 90%;
+        gap: 10px;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+   .form input, .form select{
+        width: 100%;
+    }
+
+    .form div{
+        width: 90%;
+    }
+
+    .testimonials-cards > div{
+        width: 90%; 
+    }
+
+    .subscribe h1{
+        text-align: center;
+    }
+
+    .subscribe p{
+        text-align: center;
+    }
+
+    .subscribe-input button{
+        margin-bottom: 10px;
+    }
+
+    .form-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .form-details{
+    width: 90%;
+   }
+
+.form-contact-details{
+    width: 90%;
+    margin-top: 20px;
+ }
+
+ .form-contact input[type="text"], .form-contact input[type="email"], .form-contact select, .form-contact textarea{
+    width: 100%;
+}
+
+.form-details > div > div{
+    width: 100%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #bars{
+        display: block;
+    }
+
+    nav  li{
+        display: none;
+    }
+
+    .hero-content > h1{
+        width: 100%;
+        font-size: 32px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+    }
+
+    .hero-white{
+        width: 100%;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qualities-hero{
+        width: 90%;
+        gap: 10px;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+   .form input, .form select{
+        width: 100%;
+    }
+
+    .form div{
+        width: 90%;
+    }
+
+    .form-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .form-details{
+    width: 90%;
+   }
+
+.form-contact-details{
+    width: 90%;
+    margin-top: 20px;
+ }
+
+ .form-contact input[type="text"], .form-contact input[type="email"], .form-contact select, .form-contact textarea{
+    width: 100%;
+}
+
+.form-details > div > div{
+    width: 100%;
+}
+}
